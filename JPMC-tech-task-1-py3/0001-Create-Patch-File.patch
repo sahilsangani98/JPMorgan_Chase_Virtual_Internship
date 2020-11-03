@@ -1,0 +1,639 @@
+From beeb454af47e40db0f9917352893f632c87e9d23 Mon Sep 17 00:00:00 2001
+From: sahilsangani2 <sahilsangani2@gmail.com>
+Date: Wed, 14 Oct 2020 00:54:08 -0400
+Subject: [PATCH] Create Patch File
+
+---
+ .idea/JPMC-tech-task-1-py3.iml               |  11 +
+ .idea/dictionaries/sahil.xml                 |   3 +
+ .idea/inspectionProfiles/Project_Default.xml |  19 +
+ .idea/misc.xml                               |   7 +
+ .idea/modules.xml                            |   8 +
+ .idea/vcs.xml                                |   6 +
+ .idea/workspace.xml                          | 396 +++++++++++++++++++
+ client3.py                                   |  45 ++-
+ client_test.py                               |  26 +-
+ 9 files changed, 500 insertions(+), 21 deletions(-)
+ create mode 100644 .idea/JPMC-tech-task-1-py3.iml
+ create mode 100644 .idea/dictionaries/sahil.xml
+ create mode 100644 .idea/inspectionProfiles/Project_Default.xml
+ create mode 100644 .idea/misc.xml
+ create mode 100644 .idea/modules.xml
+ create mode 100644 .idea/vcs.xml
+ create mode 100644 .idea/workspace.xml
+
+diff --git a/.idea/JPMC-tech-task-1-py3.iml b/.idea/JPMC-tech-task-1-py3.iml
+new file mode 100644
+index 0000000..6711606
+--- /dev/null
++++ b/.idea/JPMC-tech-task-1-py3.iml
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="PYTHON_MODULE" version="4">
++  <component name="NewModuleRootManager">
++    <content url="file://$MODULE_DIR$" />
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++  <component name="TestRunnerService">
++    <option name="PROJECT_TEST_RUNNER" value="Unittests" />
++  </component>
++</module>
+\ No newline at end of file
+diff --git a/.idea/dictionaries/sahil.xml b/.idea/dictionaries/sahil.xml
+new file mode 100644
+index 0000000..bb149a9
+--- /dev/null
++++ b/.idea/dictionaries/sahil.xml
+@@ -0,0 +1,3 @@
++<component name="ProjectDictionaryState">
++  <dictionary name="sahil" />
++</component>
+\ No newline at end of file
+diff --git a/.idea/inspectionProfiles/Project_Default.xml b/.idea/inspectionProfiles/Project_Default.xml
+new file mode 100644
+index 0000000..59bef65
+--- /dev/null
++++ b/.idea/inspectionProfiles/Project_Default.xml
+@@ -0,0 +1,19 @@
++<component name="InspectionProjectProfileManager">
++  <profile version="1.0">
++    <option name="myName" value="Project Default" />
++    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
++      <option name="ignoredErrors">
++        <list>
++          <option value="E402" />
++        </list>
++      </option>
++    </inspection_tool>
++    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
++      <option name="ignoredErrors">
++        <list>
++          <option value="N802" />
++        </list>
++      </option>
++    </inspection_tool>
++  </profile>
++</component>
+\ No newline at end of file
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+index 0000000..467b215
+--- /dev/null
++++ b/.idea/misc.xml
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="JavaScriptSettings">
++    <option name="languageLevel" value="ES6" />
++  </component>
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.6 (ccs)" project-jdk-type="Python SDK" />
++</project>
+\ No newline at end of file
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+index 0000000..c2eb5cf
+--- /dev/null
++++ b/.idea/modules.xml
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/JPMC-tech-task-1-py3.iml" filepath="$PROJECT_DIR$/.idea/JPMC-tech-task-1-py3.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+index 0000000..94a25f7
+--- /dev/null
++++ b/.idea/vcs.xml
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+new file mode 100644
+index 0000000..436aef5
+--- /dev/null
++++ b/.idea/workspace.xml
+@@ -0,0 +1,396 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ChangeListManager">
++    <list default="true" id="4b83df72-4f1f-486a-9ac4-dd342ba8c156" name="Default" comment="">
++      <change beforePath="$PROJECT_DIR$/client3.py" beforeDir="false" afterPath="$PROJECT_DIR$/client3.py" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/client_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/client_test.py" afterDir="false" />
++    </list>
++    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
++    <option name="TRACKING_ENABLED" value="true" />
++    <option name="SHOW_DIALOG" value="false" />
++    <option name="HIGHLIGHT_CONFLICTS" value="true" />
++    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
++    <option name="LAST_RESOLUTION" value="IGNORE" />
++  </component>
++  <component name="CoverageDataManager">
++    <SUITE FILE_PATH="coverage/JPMC_tech_task_1_py3$Unittests_for_client_test_ClientTest_test_getDataPoint_calculatePriceBidGreaterThanAsk.coverage" NAME="Unittests for client_test.ClientTest.test_getDataPoint_calculatePriceBidGreaterThanAsk Coverage Results" MODIFIED="1602650621304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
++    <SUITE FILE_PATH="coverage/JPMC_tech_task_1_py3$Unittests_in_client_test_py.coverage" NAME="Unittests in client_test.py Coverage Results" MODIFIED="1602650907195" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
++    <SUITE FILE_PATH="coverage/JPMC_tech_task_1_py3$Unittests_for_client_test_ClientTest_test_getRatio_of_two_stocks.coverage" NAME="Unittests for client_test.ClientTest.test_getRatio_of_two_stocks Coverage Results" MODIFIED="1602650700139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
++    <SUITE FILE_PATH="coverage/JPMC_tech_task_1_py3$client3.coverage" NAME="client3 Coverage Results" MODIFIED="1602650765199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
++    <SUITE FILE_PATH="coverage/JPMC_tech_task_1_py3$server3.coverage" NAME="server3 Coverage Results" MODIFIED="1602650760430" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
++  </component>
++  <component name="FileEditorManager">
++    <leaf>
++      <file leaf-file-name="client3.py" pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/client3.py">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="379">
++              <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
++              <folding>
++                <element signature="e#1154#1175#0" expanded="true" />
++              </folding>
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file leaf-file-name="test.csv" pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/test.csv">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="-27106" />
++          </provider>
++        </entry>
++      </file>
++      <file leaf-file-name="server3.py" pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/server3.py">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="133">
++              <caret line="283" column="42" lean-forward="true" selection-start-line="283" selection-start-column="42" selection-end-line="283" selection-end-column="42" />
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file leaf-file-name="client_test.py" pinned="false" current-in-tab="true">
++        <entry file="file://$PROJECT_DIR$/client_test.py">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="324">
++              <caret line="41" column="52" lean-forward="true" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
++              <folding>
++                <element signature="e#0#15#0" expanded="true" />
++              </folding>
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
++        <entry file="file://$USER_HOME$/.conda/envs/ccs/lib/python3.6/unittest/__init__.py">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="-504" />
++          </provider>
++        </entry>
++      </file>
++    </leaf>
++  </component>
++  <component name="Git.Settings">
++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
++  <component name="IdeDocumentHistory">
++    <option name="CHANGED_PATHS">
++      <list>
++        <option value="$PROJECT_DIR$/client3.py" />
++        <option value="$PROJECT_DIR$/client_test.py" />
++      </list>
++    </option>
++  </component>
++  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
++  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
++  <component name="JsFlowSettings">
++    <service-enabled>true</service-enabled>
++    <exe-path />
++    <other-services-enabled>true</other-services-enabled>
++    <auto-save>true</auto-save>
++  </component>
++  <component name="JsGulpfileManager">
++    <detection-done>true</detection-done>
++    <sorting>DEFINITION_ORDER</sorting>
++  </component>
++  <component name="NodePackageJsonFileManager">
++    <packageJsonPaths />
++  </component>
++  <component name="ProjectFrameBounds">
++    <option name="y" value="23" />
++    <option name="width" value="1440" />
++    <option name="height" value="801" />
++  </component>
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
++  <component name="ProjectView">
++    <navigator proportions="" version="1">
++      <foldersAlwaysOnTop value="true" />
++    </navigator>
++    <panes>
++      <pane id="Scope" />
++      <pane id="ProjectPane">
++        <subPane>
++          <expand>
++            <path>
++              <item name="JPMC-tech-task-1-py3" type="b2602c69:ProjectViewProjectNode" />
++              <item name="JPMC-tech-task-1-py3" type="462c0819:PsiDirectoryNode" />
++            </path>
++            <path>
++              <item name="JPMC-tech-task-1-py3" type="b2602c69:ProjectViewProjectNode" />
++              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
++            </path>
++          </expand>
++          <select />
++        </subPane>
++      </pane>
++    </panes>
++  </component>
++  <component name="PropertiesComponent">
++    <property name="WebServerToolWindowFactoryState" value="false" />
++    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
++    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
++    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
++    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
++  </component>
++  <component name="RunDashboard">
++    <option name="ruleStates">
++      <list>
++        <RuleState>
++          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
++        </RuleState>
++        <RuleState>
++          <option name="name" value="StatusDashboardGroupingRule" />
++        </RuleState>
++      </list>
++    </option>
++  </component>
++  <component name="RunManager" selected="Python tests.Unittests in client_test.py">
++    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
++      <module name="JPMC-tech-task-1-py3" />
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <envs>
++        <env name="PYTHONUNBUFFERED" value="1" />
++      </envs>
++      <option name="SDK_HOME" value="$USER_HOME$/.conda/envs/ccs/bin/python" />
++      <option name="WORKING_DIRECTORY" value="" />
++      <option name="IS_MODULE_SDK" value="false" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
++      <option name="SCRIPT_NAME" value="" />
++      <option name="PARAMETERS" value="" />
++      <option name="SHOW_COMMAND_LINE" value="false" />
++      <option name="EMULATE_TERMINAL" value="false" />
++      <option name="MODULE_MODE" value="false" />
++    </configuration>
++    <configuration name="client3" type="PythonConfigurationType" factoryName="Python" temporary="true">
++      <module name="JPMC-tech-task-1-py3" />
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <envs>
++        <env name="PYTHONUNBUFFERED" value="1" />
++      </envs>
++      <option name="SDK_HOME" value="$USER_HOME$/.conda/envs/ccs/bin/python" />
++      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
++      <option name="IS_MODULE_SDK" value="true" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
++      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/client3.py" />
++      <option name="PARAMETERS" value="" />
++      <option name="SHOW_COMMAND_LINE" value="false" />
++      <option name="EMULATE_TERMINAL" value="false" />
++      <option name="MODULE_MODE" value="false" />
++    </configuration>
++    <configuration name="server3" type="PythonConfigurationType" factoryName="Python" temporary="true">
++      <module name="JPMC-tech-task-1-py3" />
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <envs>
++        <env name="PYTHONUNBUFFERED" value="1" />
++      </envs>
++      <option name="SDK_HOME" value="$USER_HOME$/.conda/envs/ccs/bin/python" />
++      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
++      <option name="IS_MODULE_SDK" value="true" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
++      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/server3.py" />
++      <option name="PARAMETERS" value="" />
++      <option name="SHOW_COMMAND_LINE" value="false" />
++      <option name="EMULATE_TERMINAL" value="false" />
++      <option name="MODULE_MODE" value="false" />
++    </configuration>
++    <configuration name="Unittests for client_test.ClientTest.test_getDataPoint_calculatePriceBidGreaterThanAsk" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
++      <module name="JPMC-tech-task-1-py3" />
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <option name="SDK_HOME" value="" />
++      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
++      <option name="IS_MODULE_SDK" value="true" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
++      <option name="_new_additionalArguments" value="&quot;&quot;" />
++      <option name="_new_target" value="&quot;client_test.ClientTest.test_getDataPoint_calculatePriceBidGreaterThanAsk&quot;" />
++      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
++    </configuration>
++    <configuration name="Unittests for client_test.ClientTest.test_getRatio_of_two_stocks" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
++      <module name="JPMC-tech-task-1-py3" />
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <option name="SDK_HOME" value="" />
++      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
++      <option name="IS_MODULE_SDK" value="true" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
++      <option name="_new_additionalArguments" value="&quot;&quot;" />
++      <option name="_new_target" value="&quot;client_test.ClientTest.test_getRatio_of_two_stocks&quot;" />
++      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
++    </configuration>
++    <configuration name="Unittests in client_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
++      <module name="JPMC-tech-task-1-py3" />
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <option name="SDK_HOME" value="" />
++      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
++      <option name="IS_MODULE_SDK" value="true" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
++      <option name="_new_additionalArguments" value="&quot;&quot;" />
++      <option name="_new_target" value="&quot;$PROJECT_DIR$/client_test.py&quot;" />
++      <option name="_new_targetType" value="&quot;PATH&quot;" />
++    </configuration>
++    <list>
++      <item itemvalue="Python.client3" />
++      <item itemvalue="Python.server3" />
++      <item itemvalue="Python tests.Unittests in client_test.py" />
++      <item itemvalue="Python tests.Unittests for client_test.ClientTest.test_getDataPoint_calculatePriceBidGreaterThanAsk" />
++      <item itemvalue="Python tests.Unittests for client_test.ClientTest.test_getRatio_of_two_stocks" />
++    </list>
++    <recent_temporary>
++      <list>
++        <item itemvalue="Python tests.Unittests in client_test.py" />
++        <item itemvalue="Python.client3" />
++        <item itemvalue="Python.server3" />
++        <item itemvalue="Python tests.Unittests for client_test.ClientTest.test_getRatio_of_two_stocks" />
++        <item itemvalue="Python tests.Unittests for client_test.ClientTest.test_getDataPoint_calculatePriceBidGreaterThanAsk" />
++      </list>
++    </recent_temporary>
++  </component>
++  <component name="SvnConfiguration">
++    <configuration />
++  </component>
++  <component name="TaskManager">
++    <task active="true" id="Default" summary="Default task">
++      <changelist id="4b83df72-4f1f-486a-9ac4-dd342ba8c156" name="Default" comment="" />
++      <created>1602646686993</created>
++      <option name="number" value="Default" />
++      <option name="presentableId" value="Default" />
++      <updated>1602646686993</updated>
++    </task>
++    <servers />
++  </component>
++  <component name="TestHistory">
++    <history-entry file="Unittests_for_client_test_ClientTest_test_getDataPoint_calculatePriceBidGreaterThanAsk - 2020.10.14 at 00h 40m 07s.xml">
++      <configuration name="Unittests for client_test.ClientTest.test_getDataPoint_calculatePriceBidGreaterThanAsk" configurationId="tests" />
++    </history-entry>
++    <history-entry file="Unittests_for_client_test_ClientTest_test_getDataPoint_calculatePriceBidGreaterThanAsk - 2020.10.14 at 00h 41m 53s.xml">
++      <configuration name="Unittests for client_test.ClientTest.test_getDataPoint_calculatePriceBidGreaterThanAsk" configurationId="tests" />
++    </history-entry>
++    <history-entry file="Unittests_for_client_test_ClientTest_test_getDataPoint_calculatePriceBidGreaterThanAsk - 2020.10.14 at 00h 42m 01s.xml">
++      <configuration name="Unittests for client_test.ClientTest.test_getDataPoint_calculatePriceBidGreaterThanAsk" configurationId="tests" />
++    </history-entry>
++    <history-entry file="Unittests_for_client_test_ClientTest_test_getDataPoint_calculatePriceBidGreaterThanAsk - 2020.10.14 at 00h 43m 26s.xml">
++      <configuration name="Unittests for client_test.ClientTest.test_getDataPoint_calculatePriceBidGreaterThanAsk" configurationId="tests" />
++    </history-entry>
++    <history-entry file="Unittests_for_client_test_ClientTest_test_getDataPoint_calculatePriceBidGreaterThanAsk - 2020.10.14 at 00h 43m 34s.xml">
++      <configuration name="Unittests for client_test.ClientTest.test_getDataPoint_calculatePriceBidGreaterThanAsk" configurationId="tests" />
++    </history-entry>
++    <history-entry file="Unittests_for_client_test_ClientTest_test_getDataPoint_calculatePriceBidGreaterThanAsk - 2020.10.14 at 00h 43m 41s.xml">
++      <configuration name="Unittests for client_test.ClientTest.test_getDataPoint_calculatePriceBidGreaterThanAsk" configurationId="tests" />
++    </history-entry>
++    <history-entry file="Unittests_for_client_test_ClientTest_test_getRatio_of_two_stocks - 2020.10.14 at 00h 43m 57s.xml">
++      <configuration name="Unittests for client_test.ClientTest.test_getRatio_of_two_stocks" configurationId="tests" />
++    </history-entry>
++    <history-entry file="Unittests_for_client_test_ClientTest_test_getRatio_of_two_stocks - 2020.10.14 at 00h 44m 31s.xml">
++      <configuration name="Unittests for client_test.ClientTest.test_getRatio_of_two_stocks" configurationId="tests" />
++    </history-entry>
++    <history-entry file="Unittests_for_client_test_ClientTest_test_getRatio_of_two_stocks - 2020.10.14 at 00h 45m 01s.xml">
++      <configuration name="Unittests for client_test.ClientTest.test_getRatio_of_two_stocks" configurationId="tests" />
++    </history-entry>
++    <history-entry file="Unittests_in_client_test_py - 2020.10.14 at 00h 48m 27s.xml">
++      <configuration name="Unittests in client_test.py" configurationId="tests" />
++    </history-entry>
++  </component>
++  <component name="ToolWindowManager">
++    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
++    <editor active="true" />
++    <layout>
++      <window_info anchor="bottom" id="TODO" order="6" />
++      <window_info anchor="bottom" id="Event Log" side_tool="true" />
++      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
++      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37454545" />
++      <window_info anchor="bottom" id="Version Control" />
++      <window_info anchor="bottom" id="Python Console" />
++      <window_info anchor="bottom" id="Terminal" />
++      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17381974" />
++      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
++      <window_info anchor="right" id="Database" />
++      <window_info anchor="right" id="SciView" />
++      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
++      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
++      <window_info id="Favorites" side_tool="true" />
++      <window_info anchor="bottom" id="Find" order="1" />
++      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
++      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
++      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
++      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
++      <window_info anchor="bottom" id="Message" order="0" />
++      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
++    </layout>
++  </component>
++  <component name="TypeScriptGeneratedFilesManager">
++    <option name="version" value="1" />
++  </component>
++  <component name="VcsContentAnnotationSettings">
++    <option name="myLimit" value="2678400000" />
++  </component>
++  <component name="editorHistoryManager">
++    <entry file="file://$USER_HOME$/.conda/envs/ccs/lib/python3.6/unittest/__init__.py">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="-504" />
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/server3.py">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="133">
++          <caret line="283" column="42" lean-forward="true" selection-start-line="283" selection-start-column="42" selection-end-line="283" selection-end-column="42" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/client3.py">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="379">
++          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
++          <folding>
++            <element signature="e#1154#1175#0" expanded="true" />
++          </folding>
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/test.csv">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="-27106" />
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/client_test.py">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="324">
++          <caret line="41" column="52" lean-forward="true" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
++          <folding>
++            <element signature="e#0#15#0" expanded="true" />
++          </folding>
++        </state>
++      </provider>
++    </entry>
++  </component>
++  <component name="masterDetails">
++    <states>
++      <state key="ScopeChooserConfigurable.UI">
++        <settings>
++          <splitter-proportions>
++            <option name="proportions">
++              <list>
++                <option value="0.2" />
++              </list>
++            </option>
++          </splitter-proportions>
++        </settings>
++      </state>
++    </states>
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/client3.py b/client3.py
+index f1771c3..30b8aba 100644
+--- a/client3.py
++++ b/client3.py
+@@ -29,31 +29,38 @@ QUERY = "http://localhost:8080/query?id={}"
+ # 500 server request
+ N = 500
+ 
++
+ def getDataPoint(quote):
+-	""" Produce all of the needed values to generate a datapoint """
+-	""" ------------- Update this function ------------- """
+-	stock = quote['stock']
+-	bid_price = float(quote['top_bid']['price'])
+-	ask_price = float(quote['top_ask']['price'])
+-	price = bid_price
+-	return stock, bid_price, ask_price, price
++    """ Produce all of the needed values to generate a datapoint """
++    """ ------------- Update this function ------------- """
++    stock = quote['stock']
++    bid_price = float(quote['top_bid']['price'])
++    ask_price = float(quote['top_ask']['price'])
++    price = (bid_price + ask_price) / 2
++    return stock, bid_price, ask_price, price
++
+ 
+ def getRatio(price_a, price_b):
+-	""" Get ratio of price_a and price_b """
+-	""" ------------- Update this function ------------- """
+-	""" Also create some unit tests for this function in client_test.py """
+-	return 1
++    """ Get ratio of price_a and price_b """
++    """ ------------- Update this function ------------- """
++    """ Also create some unit tests for this function in client_test.py """
++    if (price_b == 0):
++        return
++    return price_a / price_b
++
+ 
+ # Main
+ if __name__ == "__main__":
+ 
+-	# Query the price once every N seconds.
+-	for _ in iter(range(N)):
+-		quotes = json.loads(urllib.request.urlopen(QUERY.format(random.random())).read())
++    # Query the price once every N seconds.
++    for _ in iter(range(N)):
++        quotes = json.loads(urllib.request.urlopen(QUERY.format(random.random())).read())
+ 
+-		""" ----------- Update to get the ratio --------------- """
+-		for quote in quotes:
+-			stock, bid_price, ask_price, price = getDataPoint(quote)
+-			print ("Quoted %s at (bid:%s, ask:%s, price:%s)" % (stock, bid_price, ask_price, price))
++        """ ----------- Update to get the ratio --------------- """
++        prices = {}
++        for quote in quotes:
++            stock, bid_price, ask_price, price = getDataPoint(quote)
++            prices[stock] = price
++            print("Quoted %s at (bid:%s, ask:%s, price:%s)" % (stock, bid_price, ask_price, price))
+ 
+-		print ("Ratio %s" % getRatio(price, price))
++    print ("Ratio %s" % getRatio(prices['ABC'], prices['DEF']))
+diff --git a/client_test.py b/client_test.py
+index af2bf26..e5848a0 100644
+--- a/client_test.py
++++ b/client_test.py
+@@ -1,5 +1,5 @@
+ import unittest
+-from client3 import getDataPoint
++from client3 import getDataPoint, getRatio
+ 
+ class ClientTest(unittest.TestCase):
+   def test_getDataPoint_calculatePrice(self):
+@@ -8,6 +8,10 @@ class ClientTest(unittest.TestCase):
+       {'top_ask': {'price': 121.68, 'size': 4}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 117.87, 'size': 81}, 'id': '0.109974697771', 'stock': 'DEF'}
+     ]
+     """ ------------ Add the assertion below ------------ """
++    for quote in quotes:
++      self.assertEqual(getDataPoint(quote), (quote['stock'], quote['top_bid']['price'], quote['top_ask']['price'], (quote['top_bid']['price'] + quote['top_ask']['price'])/2))
++
++      # stock, bid_price, ask_price, price
+ 
+   def test_getDataPoint_calculatePriceBidGreaterThanAsk(self):
+     quotes = [
+@@ -15,9 +19,27 @@ class ClientTest(unittest.TestCase):
+       {'top_ask': {'price': 121.68, 'size': 4}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 117.87, 'size': 81}, 'id': '0.109974697771', 'stock': 'DEF'}
+     ]
+     """ ------------ Add the assertion below ------------ """
+-
++    for quote in quotes:
++      self.assertEqual(getDataPoint(quote), (quote['stock'], quote['top_bid']['price'], quote['top_ask']['price'],
++                                             (quote['top_bid']['price'] + quote['top_ask']['price']) / 2))
+ 
+   """ ------------ Add more unit tests ------------ """
++  def test_getRatio_of_two_stocks(self):
++    quotes = [
++      {'top_ask': {'price': 119.2, 'size': 36}, 'timestamp': '2019-02-11 22:06:30.572453',
++       'top_bid': {'price': 120.48, 'size': 109}, 'id': '0.109974697771', 'stock': 'ABC'},
++      {'top_ask': {'price': 121.68, 'size': 4}, 'timestamp': '2019-02-11 22:06:30.572453',
++       'top_bid': {'price': 117.87, 'size': 81}, 'id': '0.109974697771', 'stock': 'DEF'}
++    ]
++
++    price1 = (quotes[0]['top_ask']['price'] + quotes[0]['top_bid']['price']) / 2
++    price2 = (quotes[1]['top_ask']['price'] + quotes[1]['top_bid']['price']) / 2
++    ans_price = price1 / price2
++    # print(type(price1))
++    # print('Price1: {}'.format(price1))
++    # print('Price2: {}'.format(price2))
++    # print('Ans: {}'.format(ans_price))
++    # self.assertEqual(getRatio(price1,price2), 123)
+ 
+ 
+ 
+-- 
+2.23.0
+
